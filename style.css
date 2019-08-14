@@ -65,615 +65,955 @@
 
 */
 
-/*---------Slider---------*/
 
-#slider
-{
-    width: 100%;
-}
-
-.carousel-caption
-{
-    top: 70%;
-    transform: translateY(-50%);
-    bottom: initial ! important;
-}
-
-.carousel-caption h5
-{
-    color: #fff;
-    font-size: 42px;
-}
-
-/*------About-----*/
-
-#about
-{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color:#555;
-}
-
-#about .btn
-{
-    padding-top: 0px;
-    padding-bottom: 30px;
-}
-
-.about .about-content
-{
-    padding-top: 60px;
-}
-
-.skills-bar
-{
-    margin-bottom: 6px;
-    font-weight: 600;
-}
-
-.progress-bar
-{
-    border-radius: 1px;
-}
-
-.progress
-{
-    border-radius: 0px;
-    margin-bottom: 20px;
-}
-
-/*-------Services---------*/
-
-#services
-{
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/bann.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #efefef !important;
-    background-attachment: fixed;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-#services  h1
-{
-    text-align: center;
-    color: #efefef !important;
-    padding-bottom: 10px;
-    font-size: 25px;
-}
-
-#services h1:after
-{
-    content: '';
-    background: #efefef;
-    display: block;
-    height: 3px;
-    widows: 170px;
-    margin: 20px auto 5px;
-    font-size: 25px;
-}
-
-.services
-{
-    margin-top: 25px;
-}
-
-.icont
-{
-    font-size: 40px;
-    margin: 20px auto;
-    padding: 20px;
-    height: 80px;
-    width: 80px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-}
-
-#services p
-{
-    font-size: 20px;
-    margin-top: 20px;
-    color: #ccc;
-}
-
-.box:hover{
-    background: #007bff;
-    cursor: pointer;
-    transition: 0.7s;
-}
-
-/*------------Team Member-----*/
-
-#team
-{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: #555;
-}
-
-h1
-{
-    text-align: center;
-    color: #555;
-    padding-bottom: 10px;
-}
-
-h1::after
-{
-    content: '';
-    background: #007bff;
-    display: block;
-    height: 3px;
-    width: 170px;
-    margin: 20px auto 5px;
-}
-
-.profile-pic
-{
-    margin-top: 25px;
-    width: 5%;
-}
-
-.profile-pic .img-box
-{
-    opacity: 1;
-    display: block;
-    position: relative;
-}
-
-.profile-pic .img-box img
-{
-filter: grayscale(1);
-order: 1px solid #fff;
-border: 1px solid rgb(7, 7, 250);
-border-radius: 50%;
-}
-
-.profile-pic .img-box img:hover
-{
-filter: grayscale(0);
-cursor: pointer;
-}
-
-.profile-pic h2
-{
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 15px;
-    color: #007bff !important;
-}
-
-.profile-pic h3
-{
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-#team .fa
-{
-    height: 25px;
-    width: 25px;
-    color: #007bff !important;
-    background: #fff;
-    padding: 4px;
-    border-radius:50%;
-}
-
-.img-box ul
-{
-    padding: 15px 0;
-    position: absolute;
-    z-index: 2;
-    bottom: 0;
-    left: 50%;
-    transform:  translateX(-50%);
-    opacity: 0;
-}
-
-.img-box ul li
-{
-   padding: 5px;
-   display: inline-block; 
-}
-
-.img-box:hover ul{
-    opacity: 1;
-}
-
-.img-box ul, .img-box ul li{
-    transition: 0.5s;
-}
-
- /* --------------Promo---*/
-
- #promo
- {
-     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(img/propro.jpg);
-     background-size: cover;
-     background-position:center;
-     color:#fff;
-     background-attachment: fixed;
-     text-align: center;
-     padding: 100px;
-     font-family: sans-serif;
-     font-size: 36px;
+*{
+    margin: 0;
+     padding: 0;
  }
-
- /*-----price plan-------*/
-
- #prise
+ 
+   header{
+     position: sticky;
+     top: 0;
+     z-index: 10;
+   }
+ 
+ .f{
+       
+       color: white;
+       font-size: 35px;
+   }
+   .navbar {
+       background-color: #35424A;
+       position: sticky;
+     top: 0;
+     z-index: 10;
+     margin-bottom: 1px;
+     
+   }
+   
+   .navbar .nav-link {
+       color: #FFF;
+       font-size: 14px; 
+       text-transform: uppercase;
+   }
+ 
+   
+   .navbar .nav-item {
+       margin: auto 0rem;
+       order-bottom: groove;
+       order-bottom-color :#E8491D;
+   }
+   .active {
+       olor: #007bff !important;
+       ont-weight: bold;
+   }
+   
+   .navbar .navbar-brand {
+       color: #FFF;
+       font-weight: 700;
+       font-size: 40px;
+   }
+   
+   .navbar .navbar-brand span {
+       color: #007bff;
+       font-size: 50px;
+       font-weight: bold;
+   
+   }
+   
+   .nav-link:hover {
+       color: #007bff;
+       font-weight: bold;
+       font-size: 19px;
+   }
+ 
+   .dropdown-item:hover{
+     background-color: #007bff;
+     font-weight: bold;
+     font-size: 19px;
+   }
+   
+   
+   .dropdown-menu {
+       ackground-color: transparent;
+       order :groove;
+       background-color: #35424A;
+       margin-left:0px;
+       color: white;
+       font-size: 16px;
+   }
+   
+   .dropdown-item{
+       color: white;
+       border-bottom: groove;
+       border-width: thin;
+   }
+   
+   
+   fa-bars {
+       color: #FFF;
+   }
+ 
+   /*  End Menu  */
+ 
+   /*---------Slider---------*/
+ 
+ #slider
  {
-     padding: 40px 0;
-     background: #efefef;                   
- }
-
- .single-price
- {
-     margin: 10px auto;
-     display: inline;
-     float: left;
      width: 100%;
-     background-color: rgb(240, 174, 174);
+ }
+ 
+ .carousel-caption
+ {
+     top: 70%;
+     transform: translateY(-50%);
+     bottom: initial ! important;
+ }
+ 
+ .carousel-caption h5
+ {
+     color: #fff;
+     font-size: 42px;
+ }
+ 
+ /*------End Slider-----*/
+ 
+ /*------About-----*/
+ 
+ #about
+ {
+     padding-top: 50px;
+     padding-bottom: 50px;
+     olor:#555;
+ }
+ #about h2
+ {
+   color:#000000;
+   font-size: 45px;
+ }
+ 
+ #about p
+ {
+   color: #555;
+   font-size: 18px;
+   adding-left: 20px;
+ }
+ 
+ #about .btn
+ {
+     padding-top: 20px;
+     padding-bottom: 20px;
+     float: right;
+ }
+ 
+ .about .about-content
+ {
+     padding-top: 60px;
+     color: red;
+ }
+ 
+ .skills-bar
+ {
+     margin-bottom: 6px;
+     font-weight: 600;
+ }
+ 
+ .progress-bar
+ {
+     border-radius: 1px;
+ }
+ 
+ .progress
+ {
+     border-radius: 0px;
+     margin-bottom: 20px;
+ }
+ 
+ /*-------End About---------*/
+ 
+ /*-------Service---------*/
+ 
+ 
+ #services
+ {
+     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/bann.jpg);
+     background-size: cover;
+     background-position: center;
+     color: #efefef !important;
+     background-attachment: fixed;
+     padding-top: 50px;
+     padding-bottom: 50px;
+ }
+ 
+ #services  h1
+ {
+     text-align: center;
+     color: #efefef !important;
+     padding-bottom: 10px;
+     font-size: 35px;
+ }
+ 
+ #services h1:after
+ {
+     content: '';
+     background: #efefef;
+     display: block;
+     height: 10px;
+     widows: 170px;
+     margin: 20px auto 5px;
+     font-size: 12px;
+ }
+ 
+ .services
+ {
+     margin-top: 25px;
+ }
+ 
+ .icont
+ {
+     font-size: 40px;
+     margin: 20px auto;
+     padding: 20px;
+     height: 80px;
+     width: 80px;
+     border: 1px solid #fff;
+     border-radius: 50%;
+ }
+ 
+ #services p
+ {
+     font-size: 20px;
+     margin-top: 20px;
+     color: #ccc;
+ }
+ 
+ .box:hover{
+     background: #007bff;
+     cursor: pointer;
+     transition: 0.7s;
+ }
+ 
+ /*------------End Service-----------*/
+ 
+ /* -------- Team--------*/
+ 
+ #team
+ {
+     padding-top: 50px;
+     padding-bottom: 50px;
+     color: #555;
+ }
+ 
+ h1
+ {
+     text-align: center;
+     color: #555;
+     font-size: 40px;
+     font-weight: bold;
+     padding-bottom: 10px;
+ }
+ 
+ h1::after
+ {
+     content: '';
+     background: #007bff;
+     display: block;
+     height: 3px;
+     width: 170px;
+     margin: 20px auto 5px;
+ }
+ 
+ .profile-pic
+ {
+     margin-top: 25px;
+     width: 5%;
+ }
+ 
+ .profile-pic .img-box
+ {
+     opacity: 1;
+     display: block;
+     position: relative;
+ }
+ 
+ .profile-pic .img-box img
+ {
+ filter: grayscale(1);
+ order: 1px solid #fff;
+ border: 1px solid rgb(7, 7, 250);
+ border-radius: 50%;
+ }
+ 
+ .profile-pic .img-box img:hover
+ {
+ filter: grayscale(0);
+ cursor: pointer;
+ }
+ 
+ .profile-pic h2
+ {
+     font-size: 22px;
+     font-weight: bold;
+     margin-top: 15px;
+     color: #007bff !important;
+ }
+ 
+ .profile-pic h3
+ {
+     font-size: 15px;
+     font-weight: bold;
+     margin-top: 15px;
+ }
+ 
+ #team .fa
+ {
+     height: 25px;
+     width: 25px;
+     color: #007bff !important;
+     background: #fff;
+     padding: 4px;
+     border-radius:50%;
+ }
+ 
+ .img-box ul
+ {
+     padding: 15px 0;
+     position: absolute;
+     z-index: 2;
+     bottom: 0;
+     left: 50%;
+     transform:  translateX(-50%);
+     opacity: 0;
+ }
+ 
+ .img-box ul li
+ {
+    padding: 5px;
+    display: inline-block; 
+ }
+ 
+ .img-box:hover ul{
+     opacity: 1;
+ }
+ 
+ .img-box ul, .img-box ul li{
      transition: 0.5s;
  }
-
- .single-price:hover
- {
-    box-shadow: 0 2px 20px #333;
- }
-
- .price-head
- {
-     background-color: #2196f3;
+ 
+  /* ---------End Team--------*/
+ 
+ /* ---------Promo--------*/
+ 
+  #promo
+  {
+      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(img/propro.jpg);
+      background-size: cover;
+      background-position:center;
+      color:#fff;
+      background-attachment: fixed;
+      text-align: center;
+      padding: 100px;
+      font-family: sans-serif;
+      font-size: 36px;
+  }
+ 
+  /*-----price plan-------*/
+ 
+ /*  Prices */ 
+ 
+  #prise
+  {
+      padding: 40px 0;
+      background: #efefef;                   
+  }
+ 
+  .single-price
+  {
+      margin: 10px auto;
+      display: inline;
+      float: left;
+      width: 100%;
+      background-color: #35424A;
+      transition: 0.5s;
+  }
+ 
+  .single-price:hover
+  {
+     box-shadow: 0 2px 20px #333;
+  }
+ 
+  .price-head
+  {
+      background-color: hsl(216, 100%, 50%);
+      display: inline;
+      float: left;
+      padding: 10px 5px;
+      text-align: center;
+      width: 100%;
+  }
+ 
+  .price-head h2
+  {
+     color:  #fff;
+     font-size: 30px;
+     font-weight: bold;
+     margin-bottom: 5px;
+     padding: 5px;
+     text-transform: uppercase;
+  }
+ 
+  .price-head p
+  {
+     font-size: 25px;
+     color:#ccc;
+     font-weight: bold;
+     margin-bottom: 5px;
+     padding: 5px;
+     text-transform: uppercase;
+     line-height: 30px;
+  }
+ 
+  .price-content
+  {
+      display: inline;
+      float: left;
+      width: 100%;
+      padding: 0 15px;
+  }
+ 
+  .price-content ul li
+  {
+     border-bottom: 1px solid#efefef;
+     padding: 15px 10px;
+     list-style: none;
+     color: white;
+  }
+ 
+  ul li:last-child
+  {
+     border: none;
+  }
+ 
+  .fa-check-circle
+  {
+     color: green;
+     margin-right: 10px;
+     font-size: 20px;
+  }
+ 
+  .fa-times-circle
+  {
+     color: red;
+     margin-right: 10px;
+     font-size: 20px;
+  }
+ 
+  .price-button
+  {
      display: inline;
      float: left;
-     padding: 10px 5px;
+     padding: 15px 15px 30px;
      text-align: center;
      width: 100%;
- }
-
- .price-head h2
+  }
+ 
+ .buy-btn
  {
-    color:  #fff;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    padding: 5px;
-    text-transform: uppercase;
+     background-color: hsl(216, 100%, 50%);
+     border-radius: 3px;
+     display: inline-block;
+     font-size: 18px;
+     padding: 15px 50px;
+     transition: 0.5s;
  }
-
- .price-head p
+ 
+ .buy-btn:hover
  {
-    font-size: 25px;
-    color:#ccc;
-    font-weight: bold;
-    margin-bottom: 5px;
-    padding: 5px;
-    text-transform: uppercase;
-    line-height: 30px;
+     border-color: 1px solid #fff;
+     background-color: #3f51b5;
  }
-
- .price-content
+ 
+ a
  {
-     display: inline;
-     float: left;
-     width: 100%;
-     padding: 0 15px;
+     text-decoration: none !important;
+     color: #fff !important;
  }
-
- .price-content ul li
+ 
+ 
+ /*-------Seles---------*/
+ 
+ #seles
  {
-    border-bottom: 1px solid#efefef;
-    padding: 15px 10px;
-    list-style: none;
+     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/promo.jpg);
+     background-size: cover;
+     background-position: center;
+     color: #efefef !important;
+     background-attachment: fixed;
+     padding-top: 50px;
+     padding-bottom: 50px;
  }
-
- ul li:last-child
+ 
+ #seles  h1
  {
-    border: none;
+     text-align: center;
+     color: #efefef !important;
+     padding-bottom: 10px;
+     font-size: 30px;
  }
-
- .fa-check-circle
+ 
+ #seles h1:after
  {
-    color: green;
-    margin-right: 10px;
-    font-size: 20px;
+     content: '';
+     background: #efefef;
+     display: block;
+     height: 3px;
+     widows: 170px;
+     margin: 20px auto 5px;
+     font-size: 25px;
  }
-
- .fa-times-circle
+ 
+ .seles
  {
-    color: red;
-    margin-right: 10px;
-    font-size: 20px;
+     margin-top: 25px;
  }
-
- .price-button
+ 
+ .icon
  {
-    display: inline;
-    float: left;
-    padding: 15px 15px 30px;
-    text-align: center;
-    width: 100%;
+     font-size: 0px;
+     margin: 10px auto;
+     padding: 10px;
+     eight: 300px;
+     idth: 100%;
+     border: 1px solid #fff;
+     border-radius: 0%;
  }
-
-.buy-btn
-{
-    background-color: #2196f3;
-    border-radius: 3px;
-    display: inline-block;
-    font-size: 18px;
-    padding: 15px 50px;
-    transition: 0.5s;
-}
-
-.buy-btn:hover
-{
-    border-color: 1px solid #fff;
-    background-color: #3f51b5;
-}
-
-a
-{
-    text-decoration: none !important;
-    color: #fff !important;
-}
-
-
-
-/*-------Seles---------*/
-
-#seles
-{
+ 
+ #seles p
+ {
+     font-size: 14px;
+     margin-top: 20px;
+     color: #ccc;
+     font-size: 20px;
+ }
+ 
+ .seles .col-md-3:hover{
+     background: #007bff;
+     cursor: pointer;
+     transition: 0.7s;
+ }
+ 
+ /*---------Slider1---------*/
+ 
+ #slider1
+ {
+     width: 50%;
+ }
+ 
+ .carousel-caption
+ {
+     top: 60%;
+     transform: translateY(-50%);
+     bottom: initial ! important;
+ }
+ 
+ .carousel-caption h5
+ {
+     color: #111;
+     font-size: 30px;
+     font-weight: bold;
+ }
+ 
+ 
+ /*----End Sales---*/
+ 
+ /*----Testmonial---*/
+ 
+ #testmonials
+ {
+ padding-top: 50px;
+ padding-bottom:50px;
+ }
+ 
+ #testmonials .row
+ {
+     margin-top: 30px;
+ }
+ 
+ .col-md-4
+ {
+    margin: 40px auto; 
+ }
+ 
+ .profile
+ {
+     padding: 70px 10px 10px;
+     ackground-color: #efefef;
+     background-color: #b2d6f1;
+ }
+ 
+ .user
+ {
+     width: 140px;
+     height: 140px;
+     border: 1px solid rgb(7, 7, 250);
+     border-radius: 50%;
+ }
+ 
+ .profile img
+ {
+     top: -60px;
+     position: absolute;
+     left: calc(50% - 60px);
+     border: 10px solid #fff;
+ }
+ 
+ .profile h3
+ {
+     font-size: 20px;
+     margin-top: 15px;
+     color: #007bff;
+ }
+ 
+ #testmonials span
+ {
+     font-size: 15px;
+     color: #333;
+ }
+ 
+ blockquote
+ {
+     font-size: 16px;
+     line-height: 30px;
+ }
+ 
+ blockquote::before
+ {
+     content: '\93';
+     font-size: 50px;
+     color: #007bff;
+     position: relative;
+     line-height: 20px;
+     bottom: -15px;
+     right: 5px;
+ }
+ 
+ blockquote::after
+ {
+     content: '\94';
+     font-size: 50px;
+     color: #007bff;
+     position: relative;
+     line-height: 20px;
+     bottom: -15px;
+     left: 5px;
+ }
+ 
+ .profile:hover
+ {
+     box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+     cursor: pointer;
+     transition: 0.5s;
+ }
+ 
+ /*  End Testimonial*/
+ 
+ /*---grt in touch----*/
+ 
+ #contact
+ {
+     
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/promo.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #efefef !important;
-    background-attachment: fixed;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+     padding-top: 40px;
+     padding-bottom: 40px;
+     color: #777;
+ }
 
-#seles  h1
-{
-    text-align: center;
-    color: #efefef !important;
-    padding-bottom: 10px;
-    font-size: 25px;
-}
+ #contact h1{
+     color: white;
+     font-weight: bold;
+ }
+ 
+ .contact-form
+ {
+     padding: 20px;
+     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/promo.jpg);
+ }
+ 
+ .form-control
+ {
+    border-radius: 0 !important;
+    border: none !important;
+    margin: 10px 0px 10px 0px;
+    padding: 20px;
+ }
 
-#seles h1:after
-{
-    content: '';
-    background: #efefef;
-    display: block;
-    height: 3px;
-    widows: 170px;
-    margin: 20px auto 5px;
-    font-size: 25px;
-}
+ 
+ ::placeholder
+ {
+     color: #999 !important;
 
-.seles
-{
-    margin-top: 25px;
-}
+ }
+ 
+ 
+ 
+ 
+ #contact .follow
+ {
+     color: #000;
+     background-color: #b2d6f1;
+     padding: 10px;
+     margin: 5px;
+     font-size: 40px;
+ }
 
-.icon
-{
-    font-size: 0px;
-    margin: 10px auto;
-    padding: 10px;
-    eight: 300px;
-    idth: 100%;
-    border: 1px solid #fff;
-    border-radius: 0%;
-}
+ 
+ .contact-info .fa{
+     margin: 10px;
+     color: blue;
+     font-weight: bold;
+ }
+ 
+ 
+ /*---footer---*/
+ 
+ #footer
+ {
+     background: #333;
+     color: #fff;
+     padding: 12px;
+ }
+ 
+ .fa-copyright
+ {
+     margin: 3px;
+     color: white;
+     font-size: 40px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   @media (max-width: 1025px) {
+   
+       .navbar .nav-item{
+           border-bottom: groove;
+           border-width: thin;
+           order-bottom:  px solid rgb(255, 255, 255);
+       }
+ 
+       .navbar .navbar-brand {
+       color: #FFF;
+       font-weight: 700;
+       font-size: 40px;
+   }
+ 
+   .navbar .navbar-brand span {
+       color: #007bff;
+       font-size: 60px;
+       font-weight: bold;
+   
+   }
+ 
+   .navbar .nav-link {
+       color: #FFF;
+       font-size: 25px; 
+       text-transform: uppercase;
+   }
+ 
+   .dropdown-menu {
+       ackground-color: transparent;
+       order :groove;
+       background-color: #35424A;
+       margin-left:0px;
+       color: white;
+       font-size: 22px;
+   }
+ 
+ 
+   #about h2
+ {
+   color:#000000;
+   font-size: 60px;
+ }
+ 
+ #about p
+ {
+   color: #555;
+   ont-size: 1px;
+ }
+ 
+ /*  Service  */
+ 
+ 
+ #services  h1
+ {
+     text-align: center;
+     color: #efefef !important;
+     padding-bottom: 10px;
+     font-size: 40px;
+ }
+ 
+ #services h1:after
+ {
+     content: '';
+     background: #efefef;
+     display: block;
+     height: 10px;
+     widows: 170px;
+     margin: 20px auto 5px;
+     font-size: 25px;
+ }
+ 
+ #service .box h3{
+   font-size: 60;
+ }
+ 
+ 
+ 
+ .icont
+ {
+     font-size: 50px;
+     margin: 30px auto;
+     padding: 20px;
+     height: 100px;
+     width: 100px;
+     border: 1px solid #fff;
+     border-radius: 50%;
+ }
+ 
+ #services p
+ {
+     font-size: 35px;
+     margin-top: 20px;
+     color: #ccc;
+ }
+ 
+ 
+ /*  Team  */
+ 
+ h1
+ {
+     text-align: center;
+     color: #555;
+     font-size: 55px;
+     padding-bottom: 10px;
+ }
+ 
+ .profile-pic h2
+ {
+     font-size: 35px;
+     font-weight: bold;
+     margin-top: 15px;
+     color: #007bff !important;
+ }
+ 
+ .profile-pic h3
+ {
+     font-size: 30px;
+     font-weight: bold;
+     margin-top: 17px;
+ }
 
-#seles p
-{
-    font-size: 14px;
-    margin-top: 20px;
-    color: #ccc;
-    font-size: 20px;
-}
-
-.seles .col-md-3:hover{
-    background: #007bff;
-    cursor: pointer;
-    transition: 0.7s;
-}
-
-/*---------Slider1---------*/
-
-#slider1
-{
-    width: 50%;
-}
-
-.carousel-caption
-{
-    top: 60%;
-    transform: translateY(-50%);
-    bottom: initial ! important;
-}
-
-.carousel-caption h5
-{
-    color: #111;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-
-/*----Testmonial---*/
-
-#testmonials
-{
-padding-top: 50px;
-padding-bottom:50px;
-}
-
-#testmonials .row
-{
-    margin-top: 30px;
-}
-
-.col-md-4
-{
-   margin: 40px auto; 
-}
-
-.profile
-{
-    padding: 70px 10px 10px;
-    ackground-color: #efefef;
-    background-color: #b2d6f1;
-}
-
-.user
-{
-    width: 140px;
-    height: 140px;
-    border: 1px solid rgb(7, 7, 250);
-    border-radius: 50%;
-}
-
-.profile img
-{
-    top: -60px;
-    position: absolute;
-    left: calc(50% - 60px);
-    border: 10px solid #fff;
-}
-
-.profile h3
-{
-    font-size: 20px;
-    margin-top: 15px;
-    color: #007bff;
-}
-
-#testmonials span
-{
-    font-size: 12px;
-    color: #333;
-}
-
-blockquote
-{
-    font-size: 16px;
-    line-height: 30px;
-}
-
-blockquote::before
-{
-    content: '\93';
-    font-size: 50px;
-    color: #007bff;
-    position: relative;
-    line-height: 20px;
-    bottom: -15px;
-    right: 5px;
-}
-
-blockquote::after
-{
-    content: '\94';
-    font-size: 50px;
-    color: #007bff;
-    position: relative;
-    line-height: 20px;
-    bottom: -15px;
-    left: 5px;
-}
-
-.profile:hover
-{
-    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-
-/*---grt in touch----*/
-
-#contact
-{
-    ackground: #efefef;
-    background: #b6b3b3;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    color: #777;
-}
-
-.contact-form
-{
-    padding: 15px;
-}
-
-.form-control
-{
-   border-radius: 0 !important;
-   border: none !important;    
-}
-
-::placeholder
-{
-    color: #999 !important;
-}
-
-
-{
-    width: 100%;
-}
-
-.follow
-{
-    background: #fff;
-    padding: 10px;
-    margin: 5px;
-}
-
-.contact-info .fa{
-    margin: 10px;
-    color: #007bff;
-    font-weight: bold;
-}
+ .profile-pic p{
+     font-size: 25px;
+ }
+ 
+ /* ---------Promo--------*/
+ 
+  #promo
+  {
+      font-size: 37px;
+  }
 
 
-/*---footer---*/
+  .price-content ul li{
+      font-size: 30px;
+  }
+ 
+  /*-----sales-------*/
+  #seles  h1
+ {
+     text-align: center;
+     color: #efefef !important;
+     padding-bottom: 10px;
+     font-size: 40px;
+ }
+ 
+ #seles h1:after
+ {
+     content: '';
+     background: #efefef;
+     display: block;
+     height: 3px;
+     widows: 170px;
+     margin: 20px auto 5px;
+     font-size: 30px;
+ }
+ 
+ 
+ /* */
+ 
+ #testmonials h1{
+   font-size: 60px;
+   font-weight: bold;
+ }
+ 
+ .profile h3
+ {
+     font-size: 30px;
+ }
+ 
+ .profile p{
+   font-size: 22px;
+ }
+ #testmonials span{
+   font-size: 25px;
+ }
 
-#footer
-{
-    background: #333;
-    color: #fff;
-    padding: 12px;
-}
 
-.fa-copyright
-{
-    margin: 3px;
-    color: white;
+
+
+ /*get intouch*/
+
+ .follow
+ {
+     background: #fff;
+     padding: 10px;
+     margin: 5px;
+     font-size: 35px;
+ }
+    
+ #footer p{
+     font-size: 23px;
+     padding: 10px 0px 10px 0px;
+ }
+ .fa-copyright
+ {
+     margin: 3px;
+    
+     color: white;
+     font-size: 23px;
+ }
+
+ #contact .follow{
+     font-size: 40px;
+ }
+
+ ::placeholder
+ {
+     color: #999 !important;
+     font-size: 35px;
+ }
+
+ .form-control .btn{
     font-size: 40px;
-{
-
-
-
-
-/*When screen is minimized*/ 
-
-@media(max-width:769px){
-
-    .fa-copyright
-    {
-        margin: 3px;
-        color: red;
-        font-size: 40px;
-    {
-
-
-
-
-
 }
+   } 
+ 
+ 

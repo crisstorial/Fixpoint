@@ -14,222 +14,6 @@
 
 <style>
 
-*{
-   margin: 0;
-    padding: 0;
-}
-
-  header{
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-
-.f{
-      
-      color: white;
-      font-size: 35px;
-  }
-  .navbar {
-      background-color: #35424A;
-      position: sticky;
-    top: 0;
-    z-index: 10;
-    margin-bottom: 1px;
-    
-  }
-  
-  .navbar .nav-link {
-      color: #FFF;
-      font-size: 14px; 
-      text-transform: uppercase;
-  }
-
-  
-  .navbar .nav-item {
-      margin: auto 0rem;
-      order-bottom: groove;
-      order-bottom-color :#E8491D;
-  }
-  .active {
-      olor: #007bff !important;
-      ont-weight: bold;
-  }
-  
-  .navbar .navbar-brand {
-      color: #FFF;
-      font-weight: 700;
-      font-size: 40px;
-  }
-  
-  .navbar .navbar-brand span {
-      color: #007bff;
-      font-size: 50px;
-      font-weight: bold;
-  
-  }
-  
-  .nav-link:hover {
-      color: #007bff;
-      font-weight: bold;
-      font-size: 19px;
-  }
-
-  .dropdown-item:hover{
-    background-color: #007bff;
-    font-weight: bold;
-    font-size: 19px;
-  }
-  
-  
-  .dropdown-menu {
-      ackground-color: transparent;
-      order :groove;
-      background-color: #35424A;
-      margin-left:0px;
-      color: white;
-      font-size: 16px;
-  }
-  
-  .dropdown-item{
-      color: white;
-      border-bottom: groove;
-      border-width: thin;
-  }
-  
-  
-  fa-bars {
-      color: #FFF;
-  }
-
-  /*  End Menu  */
-
-  /*---------Slider---------*/
-
-#slider
-{
-    width: 100%;
-}
-
-.carousel-caption
-{
-    top: 70%;
-    transform: translateY(-50%);
-    bottom: initial ! important;
-}
-
-.carousel-caption h5
-{
-    color: #fff;
-    font-size: 42px;
-}
-
-/*------End Slider-----*/
-
-/*------About-----*/
-
-#about
-{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    olor:#555;
-}
-#about h2
-{
-  color:#000000;
-  font-size: 45px;
-}
-
-#about p
-{
-  color: #555;
-  font-size: 18px;
-}
-
-#about .btn
-{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    float: right;
-}
-
-.about .about-content
-{
-    padding-top: 60px;
-    color: red;
-}
-
-.skills-bar
-{
-    margin-bottom: 6px;
-    font-weight: 600;
-}
-
-.progress-bar
-{
-    border-radius: 1px;
-}
-
-.progress
-{
-    border-radius: 0px;
-    margin-bottom: 20px;
-}
-
-/*-------End About---------*/
-
-  
-  @media (max-width: 1024px) {
-  
-      .navbar .nav-item{
-          border-bottom: groove;
-          border-width: thin;
-          order-bottom:  px solid rgb(255, 255, 255);
-      }
-
-      .navbar .navbar-brand {
-      color: #FFF;
-      font-weight: 700;
-      font-size: 40px;
-  }
-
-  .navbar .navbar-brand span {
-      color: #007bff;
-      font-size: 60px;
-      font-weight: bold;
-  
-  }
-
-  .navbar .nav-link {
-      color: #FFF;
-      font-size: 25px; 
-      text-transform: uppercase;
-  }
-
-  .dropdown-menu {
-      ackground-color: transparent;
-      order :groove;
-      background-color: #35424A;
-      margin-left:0px;
-      color: white;
-      font-size: 22px;
-  }
-
-
-  #about h2
-{
-  color:#000000;
-  font-size: 50px;
-}
-
-#about p
-{
-  color: #555;
-  font-size: 24px;
-}
-   
-  } 
-
 
 
 </style>
@@ -631,7 +415,7 @@
 
 
       <section id="seles">
-          <div class="container">
+          <div class="container-fluid">
             <h1>What we Sale</h1>
             <div class="row services">
               <div class="col-md-12 col-lg-3 text-center">
@@ -874,7 +658,7 @@
             <div class="col-lg-12 text-center">
                 <div class="profile">
                   <img src="img/calisti.jpg" class="user">
-                  <blockquote>A HRIS, which is also known as a human resource information system or human resource management system (HRMS), is basically This allows HR activities and processes to occur electronically.</blockquote>
+                  <p>A HRIS, which is also known as a human resource information system or human resource management system (HRMS), is basically This allows HR activities and processes to occur electronically.</p>
                   <h3>Calist Tarimo <span>Founder At FixPoint Sol LTD</span></h3>
                 </div>
             </div>
@@ -931,7 +715,7 @@
                           <input type="email" class="form-control" placeholder="Email Address">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" rows="4" placeholder="Type Your Massage..."></textarea>
+                            <textarea class="form-control" rows="5" placeholder="Type Your Massage..."></textarea>
                           </div>
                           <button type="submit" class="btn   btn-block btn-primary">SEND MASSAGE</button>
                   </form>
