@@ -9,9 +9,297 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+
+
+<style>
+
+*{
+   margin: 0;
+    padding: 0;
+}
+
+  header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+.f{
+      
+      color: white;
+      font-size: 35px;
+  }
+  .navbar {
+      background-color: #35424A;
+      position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-bottom: 1px;
+    
+  }
+  
+  .navbar .nav-link {
+      color: #FFF;
+      font-size: 14px; 
+      text-transform: uppercase;
+  }
+
+  
+  .navbar .nav-item {
+      margin: auto 0rem;
+      order-bottom: groove;
+      order-bottom-color :#E8491D;
+  }
+  .active {
+      olor: #007bff !important;
+      ont-weight: bold;
+  }
+  
+  .navbar .navbar-brand {
+      color: #FFF;
+      font-weight: 700;
+      font-size: 40px;
+  }
+  
+  .navbar .navbar-brand span {
+      color: #007bff;
+      font-size: 50px;
+      font-weight: bold;
+  
+  }
+  
+  .nav-link:hover {
+      color: #007bff;
+      font-weight: bold;
+      font-size: 19px;
+  }
+
+  .dropdown-item:hover{
+    background-color: #007bff;
+    font-weight: bold;
+    font-size: 19px;
+  }
+  
+  
+  .dropdown-menu {
+      ackground-color: transparent;
+      order :groove;
+      background-color: #35424A;
+      margin-left:0px;
+      color: white;
+      font-size: 16px;
+  }
+  
+  .dropdown-item{
+      color: white;
+      border-bottom: groove;
+      border-width: thin;
+  }
+  
+  
+  fa-bars {
+      color: #FFF;
+  }
+
+  /*  End Menu  */
+
+  /*---------Slider---------*/
+
+#slider
+{
+    width: 100%;
+}
+
+.carousel-caption
+{
+    top: 70%;
+    transform: translateY(-50%);
+    bottom: initial ! important;
+}
+
+.carousel-caption h5
+{
+    color: #fff;
+    font-size: 42px;
+}
+
+/*------End Slider-----*/
+
+/*------About-----*/
+
+#about
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    olor:#555;
+}
+#about h2
+{
+  color:#000000;
+  font-size: 45px;
+}
+
+#about p
+{
+  color: #555;
+  font-size: 18px;
+}
+
+#about .btn
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: right;
+}
+
+.about .about-content
+{
+    padding-top: 60px;
+    color: red;
+}
+
+.skills-bar
+{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.progress-bar
+{
+    border-radius: 1px;
+}
+
+.progress
+{
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+
+/*-------End About---------*/
+
+  
+  @media (max-width: 1024px) {
+  
+      .navbar .nav-item{
+          border-bottom: groove;
+          border-width: thin;
+          order-bottom:  px solid rgb(255, 255, 255);
+      }
+
+      .navbar .navbar-brand {
+      color: #FFF;
+      font-weight: 700;
+      font-size: 40px;
+  }
+
+  .navbar .navbar-brand span {
+      color: #007bff;
+      font-size: 60px;
+      font-weight: bold;
+  
+  }
+
+  .navbar .nav-link {
+      color: #FFF;
+      font-size: 25px; 
+      text-transform: uppercase;
+  }
+
+  .dropdown-menu {
+      ackground-color: transparent;
+      order :groove;
+      background-color: #35424A;
+      margin-left:0px;
+      color: white;
+      font-size: 22px;
+  }
+
+
+  #about h2
+{
+  color:#000000;
+  font-size: 50px;
+}
+
+#about p
+{
+  color: #555;
+  font-size: 24px;
+}
+   
+  } 
+
+
+
+</style>
+
+
+
+
+
+
     </head>
-    <body>
-        <!---Navigation-->
+
+
+    
+<header>
+
+
+
+
+       <!-- Navbar -->
+       <nav class="navbar navbar-expand-lg">
+          <div class="container">
+          <a href="#" class="navbar-brand"><span>Fix</span>point Solution LTD</a>
+     
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"  aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle-navigation">            
+          <i class="f fa fa-bars"></i>
+          </button>
+
+              <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item"><a href="#top" class="active nav-link">Home</a></li>
+                      <li class="nav-item"><a href="#about" class="nav-link">About as</a></li>
+                      <li class="nav-item"><a href="#seles" class="nav-link">Products</a></li>
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servises</a>
+                          <div class="dropdown-menu" aria-labelledby="dropdown">
+                              <a class="dropdown-item" href="#">Web Design</a>
+                              <a class="dropdown-item" href="#">App Development</a>
+                              <a class="dropdown-item" href="#">Graphic Design</a>
+                              <a class="dropdown-item" href="#">Graghic Design</a>
+                              <a class="dropdown-item" href="#">Digital Marketing</a>
+                          </div>
+                      </li>
+                      <li class="nav-item"><a href="#team" class="nav-link">Our Team</a></li>
+                      <li class="nav-item"><a href="#contact" class="nav-link">Contact As</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+<!-- Navbar -->
+
+
+</header>
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!---Navigation-
         <section id="nav-bar">
             <nav class="navbar navbar-expand-lg avbar-light">
                 <a class="navbar-brand" href="#"><img src="img/logo.jpg">FixPoint Solution</a>
@@ -42,7 +330,7 @@
                   </ul>
                 </div>
               </nav>
-        </section> 
+        </section> --->
 
         <!----------Slider---------------->
 
@@ -92,8 +380,9 @@
                     <div class="col-md-12 col-lg-6">
                         <h2>About Us</h2>
                         <div class="about-content">
-                                A HRIS, which is also known as a human resource information system or human resource management system (HRMS), is basically an intersection of human resources and information technology through HR software. This allows HR activities and processes to occur electronically.
-                                To put it another way, a HRIS may be viewed as a way, through software, for businesses big and small to take care of a number of activities, including those related to human resources, accounting, management, and payroll. A HRIS allows a company to plan its HR costs more  
+                               <p> A HRIS, which is also known as a human resource information system or human resource management system (HRMS), is basically an intersection of human resources and information technology through HR software. This allows HR activities and processes to occur electronically.
+                                To put it another way, a HRIS may be viewed as a way, through software, for busine3sses big and small to take care of a number of activities, including those related to human resources, accounting, management, and payroll. A HRIS allows a company to plan its HR costs more
+                                </p>  
                         </div>
                         
                     </div>
@@ -102,10 +391,11 @@
                     </div>--->
                     <div class="col-md-12 col-lg-6">
                       <div class="about-content"><br><br>
-                              A HRIS, which is also known as a human resource information system or human resource management system (HRMS), is basically an intersection of human resources and information technology through HR software. This allows HR activities and processes to occur electronically.
+                              <p>A HRIS, which is also known as a human resource information system or human resource management system (HRMS), is basically an intersection of human resources and information technology through HR software. This allows HR activities and processes to occur electronically.
                               To put it another way, a HRIS may be viewed as a way, through software, for businesses big and small to take care of a number of activities, including those related to human resources, accounting, management, and payroll. A HRIS allows a company to plan its HR costs more  
+                              </p>
                       </div>
-                      <button type="button" class="btn btn-primary">Read more>></button>
+                      <button type="button" class="col-sm-12 col-md-3 btn btn-primary">Read more>></button>
                   </div>
 
 
