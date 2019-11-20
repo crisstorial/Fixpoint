@@ -614,7 +614,7 @@
  
  #slider1 .carousel-caption
  {
-     top: 7%;
+     top: 10%;
      transform: translateY(-50%);
      bottom: initial ! important;
  }
