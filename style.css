@@ -669,17 +669,18 @@
  
  .user
  {
-     width: 140px;
-     height: 140px;
+     width: 180px;
+     height: 180px;
      border: 1px solid rgb(7, 7, 250);
      border-radius: 50%;
+     padding: 10px;
  }
  
  .profile img
  {
-     top: -60px;
+     top: -75px;
      position: absolute;
-     left: calc(50% - 60px);
+     left: calc(47% - 50px);
      border: 10px solid #fff;
  }
  
@@ -747,11 +748,12 @@
  #contact h1{
      color: white;
      font-weight: bold;
+     font-size: 40px;
  }
  
  .contact-form
  {
-     padding: 20px;
+     padding: 10px;
      background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/promo.jpg);
  }
  
@@ -760,7 +762,7 @@
     border-radius: 0 !important;
     border: none !important;
     margin: 10px 0px 10px 0px;
-    padding: 20px;
+    padding: 10px;
  }
 
  
@@ -777,8 +779,8 @@
  {
      color: #000;
      background-color: #b2d6f1;
-     padding: 10px;
-     margin: 5px;
+     padding: 5px;
+     margin: 10px;
      font-size: 16px;
  }
 
@@ -787,6 +789,7 @@
      margin: 10px;
      color: blue;
      font-weight: bold;
+     font-size: 30px;
  }
  
  
@@ -1136,7 +1139,7 @@
  }
 
  form .btn{
-     font-size: 60px;
+     font-size: 50px;
  }
     
  #footer p{
@@ -1147,12 +1150,19 @@
  {
      margin: 3px;
      color: white;
-     font-size: 23px;
+     font-size: 25px;
  }
 
  #contact .follow{
-     font-size: 40px;
+     font-size: 43px;
  }
+
+ .contact-info .fa{
+    margin: 10px;
+    color: blue;
+    font-weight: bold;
+    font-size: 40px;
+}
 
  ::placeholder
  {
