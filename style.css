@@ -71,20 +71,20 @@
      padding: 0;
  }
  
-   header{
-     position: sticky;
+   .header{
+     position: fixed;
      top: 0;
      z-index: 10;
    }
  
  
-   .navbar {
+    .navbar {
        background-color: #35424A;
-       position: sticky;
+       position: fixed;
      top: 0;
      z-index: 10;
      margin-bottom: 1px;
-     
+     position: relative;
    }
    
    .navbar .nav-link {
@@ -386,7 +386,7 @@
      bottom: 0;
      left: 50%;
      transform:  translateX(-50%);
-     opacity: 0;
+     opacity: 1;
  }
  
  .img-box ul li
@@ -611,6 +611,11 @@
  {
      width: 100%;
  }
+
+ #slider .carousel-item
+ {
+    background-color: #ffffff;
+ }
  
  #slider1 .carousel-caption
  {
@@ -650,7 +655,6 @@
  .profile
  {
      padding: 70px 10px 10px;
-     ackground-color: #efefef;
      background-color: #b2d6f1;
  }
 
@@ -673,7 +677,7 @@
      height: 180px;
      border: 1px solid rgb(7, 7, 250);
      border-radius: 50%;
-     padding: 10px;
+     padding: 2px;
  }
  
  .profile img
