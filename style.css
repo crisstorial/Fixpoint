@@ -70,17 +70,27 @@
     margin: 0;
      padding: 0;
  }
+
+
+ #body
+ {
+     margin-top: 50px;
+     position: relative;
+     ackground-color: red;
+    
+ }
  
-   .header{
-     position: fixed;
+   #header{
+     position: relative;
      top: 0;
      z-index: 10;
+     display: inline;
    }
  
  
     .navbar {
        background-color: #35424A;
-       position: fixed;
+       position: sticky;
      top: 0;
      z-index: 10;
      margin-bottom: 1px;
@@ -799,18 +809,19 @@
  
  /*---footer---*/
  
- #footer
+ #footer .footer
  {
-     background: #333;
+     background-color: #333;
      color: #fff;
-     padding: 12px;
+     padding: 8px 0pc 0px 0px;
+     margin-top: 40px;
  }
  
- .fa-copyright
+ #footer .fa-copyright
  {
      margin: 3px;
      color: white;
-     font-size: 40px;
+     font-size: 20px;
  }
  
  
@@ -823,6 +834,16 @@
  
    
    @media (max-width: 1025px) {
+
+
+
+    #body
+ {
+     margin-top: 100px;
+     position: relative;
+     ackground-color: red;
+    
+ }
    
        .navbar .nav-item{
            border-bottom: groove;
@@ -1146,16 +1167,7 @@
      font-size: 50px;
  }
     
- #footer p{
-     font-size: 23px;
-     padding: 10px 0px 10px 0px;
- }
- .fa-copyright
- {
-     margin: 3px;
-     color: white;
-     font-size: 25px;
- }
+ 
 
  #contact .follow{
      font-size: 43px;
@@ -1177,6 +1189,27 @@
  .form-control .btn{
     font-size: 40px;
 }
+
+
+/*---footer---*/
+ 
+#footer .footer
+{
+    background-color: #333;
+    color: #fff;
+    padding: 8px 0pc 0px 0px;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+#footer .fa-copyright
+{
+    margin: 3px;
+    color: white;
+    font-size: 30px;
+}
+
+
    } 
  
  
