@@ -94,7 +94,6 @@
      top: 0;
      z-index: 10;
      margin-bottom: 1px;
-     position: relative;
    }
    
    .navbar .nav-link {
@@ -106,6 +105,7 @@
    
    .navbar .nav-item {
        margin: auto 0rem;
+       float: right;
        order-bottom: groove;
        order-bottom-color :#E8491D;
    }
@@ -118,6 +118,11 @@
        color: #FFF;
        font-weight: 700;
        font-size: 20px;
+   }
+
+   .navbar
+   {
+       float: right;
    }
    
    .navbar .navbar-brand span {
@@ -143,9 +148,9 @@
    
    .dropdown-menu {
        ackground-color: transparent;
-       order :groove;
+       border :groove;
        background-color: #35424A;
-       margin-left:0px;
+       margin-left:40px;
        color: white;
        font-size: 16px;
    }
@@ -153,7 +158,7 @@
   .dropdown-menu .dropdown-item{
        color: white;
        background-color: #35424A;
-       border-bottom: groove;
+       order-bottom: groove;
        border-width: thin;
    }
    
@@ -747,6 +752,74 @@
  }
  
  /*  End Testimonial*/
+
+/*------ServInfo-----*/
+ 
+#servinfo
+{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    olor:#555;
+}
+
+#servinfo h1
+{
+    color: #000000;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#servinfo h2
+{
+  color:#000000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#servinfo p
+{
+  color: #555;
+  font-size: 18px;
+  adding-left: 20px;
+}
+
+#servinfo .btn
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+.servinfo .servinfo-content
+{
+    padding-top: 60px;
+    color: red;
+}
+
+.skills-bar
+{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.progress-bar
+{
+    border-radius: 1px;
+}
+
+.progress
+{
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+
+#more {display: none;}
+
+/*-------End Servinfo---------*/
+
+
  
  /*---grt in touch----*/
  
@@ -854,29 +927,29 @@
        .navbar .navbar-brand {
        color: #FFF;
        font-weight: 700;
-       font-size: 40px;
+       font-size: 60px;
    }
  
    .navbar .navbar-brand span {
        color: #007bff;
-       font-size: 60px;
+       font-size: 80px;
        font-weight: bold;
    
    }
  
    .navbar .nav-link {
        color: #FFF;
-       font-size: 25px; 
+       font-size: 40px; 
        text-transform: uppercase;
    }
  
-   .dropdown-menu {
+   .dropdown-menu .dropdown-item {
        ackground-color: transparent;
        order :groove;
        background-color: #35424A;
        margin-left:0px;
        color: white;
-       font-size: 22px;
+       font-size: 40px;
    }
 
    .f{
@@ -920,29 +993,29 @@
    #about h2
  {
    color:#000000;
-   font-size: 55px;
+   font-size: 70px;
  }
 
- #about h4
+ #about h3
  {
-     font-size: 35;
+     font-size: 43;
  }
  #about p
  {
    color: #555;
-   font-size: 30px;
+   font-size: 45px;
    text-align: justify;
  }
  
  /*  Service  */
  
  
- #services  h1
+ #services .icont h1
  {
      text-align: center;
      color: #efefef !important;
      padding-bottom: 10px;
-     font-size: 40px;
+     font-size: 45px;
  }
  
  #services h1:after
@@ -953,18 +1026,19 @@
      height: 10px;
      widows: 170px;
      margin: 20px auto 5px;
-     font-size: 25px;
+     font-size: 45px;
  }
  
- #service .box h3{
+ #services h2
+ {
    font-size: 60;
  }
  
  
  
- .icont
+ #services .icont h3
  {
-     font-size: 50px;
+     font-size: 0px;
      margin: 30px auto;
      padding: 20px;
      height: 100px;
@@ -975,7 +1049,7 @@
  
  #services p
  {
-     font-size: 35px;
+     font-size: 43px;
      margin-top: 20px;
      color: #ccc;
  }
@@ -1151,6 +1225,33 @@
 #testmonials .profile span{
    font-size: 28px;
 }
+
+#servinfo .servinfo-content h1
+{
+    color: #000000;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#servinfo .servinfo-content h2
+ {
+   color:#000000;
+   font-size: 40px;
+ }
+
+ h3
+ {
+     font-size: 50;
+ }
+
+ #servinfo .servinfo-content p
+ {
+   color: #555;
+   font-size: 40px;
+   text-align: justify;
+ }
+
+
 
 
  /*Contact Us*/
