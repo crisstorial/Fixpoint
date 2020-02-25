@@ -181,6 +181,20 @@
      bottom: initial ! important;
  }
  
+#nav-barz {
+    
+color: #000000;
+    height: 100vh;
+    position: parent;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -msn-background-size: cover;
+
+}
+
+
  #slider .carousel-caption h5
  {
      color: #007bff;
